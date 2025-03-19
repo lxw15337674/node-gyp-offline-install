@@ -114,15 +114,3 @@ node-gyp-offline-install/
 ├── README.md             # 说明文档
 └── ...
 ```
-
-## 示例代码
-
-`test/node-gyp-demo/index.js` 用于加载和测试 C++ 插件。
-
-```javascript
-try {
-  module.exports = require('./build/Debug/addon');
-} catch (e) {
-  module.exports = require('./build/Release/addon');
-}
-```
